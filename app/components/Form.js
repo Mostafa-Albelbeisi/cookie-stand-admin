@@ -87,7 +87,7 @@ export default function Form() {
                                 />
 
 
-                                <label className='m-16 px-3 py-2 w-64 font-medium'>Maximum customer</label>
+                                <label className='m-16 px-3 py-2 w-64 font-medium'>Average cookie per sale</label>
                                 <input
                                     onInput={saleHandleChange}
                                     autoComplete="off"
