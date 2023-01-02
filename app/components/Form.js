@@ -73,7 +73,7 @@ export default function Form() {
                                     name='minimum'
                                     type='number'
                                     placeholder="Minimum customer per hour"
-                                    className="m-6 rounded-lg border px-3 py-2 shadow-sm w-64 "
+                                    className="m-6 rounded-lg border px-3 py-2 ml-12 shadow-sm w-64 "
                                 />
                                 <label className='m-16 px-3 py-2 w-64 font-medium'>Maximum customer</label>
                                 <input
@@ -83,7 +83,7 @@ export default function Form() {
                                     name='maximum'
                                     type='number'
                                     placeholder="Maximum customer per hour"
-                                    className="m-6 rounded-lg border px-3 py-2 shadow-sm w-64"
+                                    className="m-6 rounded-lg border px-3 py-2 ml-12 shadow-sm w-64"
                                 />
 
 
