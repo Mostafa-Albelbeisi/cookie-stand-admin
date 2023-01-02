@@ -1,13 +1,13 @@
-# LAB - Class 29
+# LAB - Class 32
 
-## Project: cookie stands
+## Project: Cookie Stand Admin
 
 ### Author: Mostafa Albelbeisi
 
 ### Links and Resources
 
-- 
-- 
+- https://cookie-stand-admin-tau-ecru.vercel.app/
+- https://github.com/Mostafa-Albelbeisi/cookie-stand-admin
 
 ### Setup
 
@@ -16,7 +16,7 @@
 i.e.
 
 - `PORT` - 3000
-- `DATABASE_URL` - 
+- `` - 
 
 #### How to initialize/run your application (where applicable)
 
