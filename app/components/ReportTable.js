@@ -9,7 +9,7 @@ export default function ReportTable({ report }) {
 
         <div>
             <Table bordered className="text-black">
-                <thead className="border-[#815B5B] border-2">
+                <thead className="dark:text-white border-[#815B5B] border-2">
                     <tr className="">
                         <th className="">Location</th>
 
@@ -20,7 +20,7 @@ export default function ReportTable({ report }) {
                         <th className="">Total</th>
                     </tr>
                 </thead>
-                <tbody className="border-[#815B5B] border-2">
+                <tbody className="dark:text-white border-[#815B5B] border-2">
                     {report.length > 0 &&
                         report.map(({ Location }, index) => {
                             let total = 0
@@ -45,9 +45,11 @@ export default function ReportTable({ report }) {
                         })}
                 </tbody>
             </Table>
-            <p className="text-black">
+            <section className="dark:text-white text-gray-900">
+            <p className="">
                 {locations} Locations Worldwide
             </p>
+            </section>
         </div>
     );
 }

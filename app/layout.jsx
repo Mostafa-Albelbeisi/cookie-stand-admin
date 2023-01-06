@@ -1,8 +1,10 @@
+'use client';
 
 
 import './globals.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import ThemeWrapper from './contexts/theme';
 
 export default function RootLayout({ children }) {
 
@@ -10,14 +12,15 @@ export default function RootLayout({ children }) {
     <html lang="en">
 
 
-
-      <body>
-        <Header />
-        <main className="py-28 h-max bg-[url('../public/assets/cookies.jpg')]">
-          {children}
-        </main>
-        <Footer />
-      </body>
+      <ThemeWrapper>
+        <body>
+          <Header />
+          <main className="dark:bg-[url('../public/assets/cookies-removebg-preview.jpg')] py-28 h-max bg-[url('../public/assets/cookies.jpg')]">
+            {children}
+          </main>
+          <Footer />
+        </body>
+      </ThemeWrapper>
     </html>
   )
 }

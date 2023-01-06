@@ -1,13 +1,26 @@
-import React from 'react'
-import Link from "next/link"
+import Link from "next/link";
+import React, { useContext } from 'react'
+import { ThemeContext } from '../contexts/theme';
+import { BsFillMoonStarsFill } from 'react-icons/bs';
+
 
 export default function Header() {
+
+    const { darkTheme, toggleThemeHandler } = useContext(ThemeContext);
+    console.log(darkTheme);
+
+
     return (
         <header>
-            <nav className='bg-[#F2DEBA] py-3 p-4 font-semibold'>
+            <nav className='dark:bg-gray-900 bg-[#F2DEBA] font-semibold container flex flex-wrap item-center justify-between mx-auto py-3'>
                 <Link href='/' className='hover:text-blue-500'>
-                    <span className='text-xl '> Cookie Stand Admin</span>
+                    <span className='text-xl dark:text-white dark:hover:text-blue-500'> Cookie Stand Admin</span>
                 </Link >
+
+                <BsFillMoonStarsFill onClick={toggleThemeHandler} className=' text-2xl dark:text-white' />
+
+
+
             </nav>
         </header>
 
